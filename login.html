@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Anas bin Al Nadr</title>
+    <link rel="stylesheet" href="/login/styles.css">
+    <link rel="icon" type="image/png" href="/All-Images/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Naskh+Arabic:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/69f3b7df45.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- ====== NAVBAR ====== -->
+        <nav>
+        <div class="navbar">
+            <div class="navlink"><a href="/index.html" id="nav-home">الصفحة الرئيسية</a></div>
+        </div>
+        <div class="nav-left-side">
+            <img src="/All-Images/logo.png" alt="school logo" class="logo">
+            <div class="settings">
+                <div class="dots-container">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            
+                <div class="dropdown">
+                    <div class="option option1">
+                        <p id="lang-label">Language</p>
+                        <div class="languages">
+                            <div class="lang-option" id="lang-en">English</div>
+                            <div class="lang-option" id="lang-ar">عربي</div>
+                        </div>
+                    </div>
+                    <div class="option option2">
+                        <a id="login" href="index.html">Back <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="login-page">
+        <section class="login-container">
+            <div class="login-header">
+                <img src="/All-Images/logo.png" alt="School Logo" class="logo">
+                <h1>تسجيل الدخول</h1>
+            </div>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username"><i class="fa-solid fa-user"></i> اسم المستخدم</label>
+                    <input type="text" id="username" name="username" placeholder="أدخل اسم المستخدم" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password"><i class="fa-solid fa-lock"></i> كلمة المرور</label>
+                    <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+                </div>
+
+                <button type="submit" class="btn-login">تسجيل الدخول</button>
+
+                <p class="forgot-password">
+                    <a href="#">نسيت كلمة المرور؟</a>
+                </p>
+
+                <p class="signup-link">
+                    ليس لديك حساب؟ <a href="#">سجل الآن</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="login-footer">
+        <p>&copy; 2025 Anas bin Al-Nadr. جميع الحقوق محفوظة.</p>
+        <p>تم الإنشاء بواسطة QuantumLayout</p>
+    </footer>
+
+    <script src="/login/login.js" defer></script>
+</body>
+</html>
